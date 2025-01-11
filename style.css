@@ -1,0 +1,312 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #fff9c4, #ffeb3b); /* Vàng nhạt */
+    color: #b71c1c; /* Đỏ */
+}
+
+/* Header Styles */
+.main-header {
+    background: linear-gradient(135deg, #c62828, #ffeb3b); /* Đỏ và vàng */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%; /* Ensure the header spans full width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-top: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #b71c1c; /* Đỏ */
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 235, 59, 0.2); /* Vàng nhạt khi hover */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, rgba(255, 235, 59, 0.5), rgba(255, 235, 59, 0.8)), url('hero-bg.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: #b71c1c; /* Đỏ */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    animation: typingEffect 3s steps(30, end) forwards; /* Typing effect */
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-section .btn {
+    background: linear-gradient(135deg, #c62828, #ffeb3b); /* Đỏ và vàng */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.hero-section .btn:hover {
+    background: linear-gradient(135deg, #ffeb3b, #c62828); /* Đảo ngược màu khi hover */
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c62828; /* Đỏ */
+    animation: slideInLeft 1 s ease-in-out;
+}
+
+/* Articles Grid */
+.articles-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.article-card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.article-card h3 {
+    margin-bottom: 10px;
+}
+
+.article-card .btn {
+    background: linear-gradient(135deg, #c62828, #ffeb3b); /* Đỏ và vàng */
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.article-card .btn:hover {
+    background: linear-gradient(135deg, #ffeb3b, #c62828); /* Đảo ngược màu khi hover */
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Tạo lưới với cột tự động */
+    gap: 15px; /* Khoảng cách giữa các hình ảnh */
+}
+
+.gallery-grid img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của ô */
+    border-radius: 5px; /* Bo góc hình ảnh */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng cho hình ảnh */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Hiệu ứng chuyển động */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Phóng to hình ảnh khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Đổ bóng mạnh hơn khi hover */
+}
+
+/* Media Section */
+.media-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+audio,
+video {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Comments Section */
+#comments {
+    background-color: #f0f8ff; /* Light background for better visibility */
+    padding: 40px 0;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for better spacing */
+    max-width: 600px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding for comfort */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #c62828; /* Đỏ */
+    outline: none;
+}
+
+form button {
+    background: linear-gradient(135deg, #c62828, #ffeb3b); /* Đỏ và vàng */
+    color: white;
+    padding: 12px 20px; /* Increased padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #ffeb3b, #c62828); /* Đảo ngược màu khi hover */
+}
+
+.comment-list {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.comment-list h3 {
+    margin-bottom: 10px;
+    color: #c62828; /* Đỏ */
+}
+
+.comment-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-list li {
+    background: #ffffff; /* White background for comments */
+    margin: 10px 0;
+    padding: 12px; /* Increased padding */
+    border-radius: 5px;
+    box-shadow: 0 2px  4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out; /* Smooth background transition */
+}
+
+.comment-list li:hover {
+    background: #f1f1f1; /* Light gray on hover */
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #c62828, #ffeb3b); /* Đỏ và vàng */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
